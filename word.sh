@@ -6,3 +6,5 @@ jq -c '.[]' Dictionary.json | while read -r item; do
     echo "$item" > "word/$word.json"      # Save as word.json inside the name folder
     echo "$word created"
 done
+
+# command: bash id.sh
