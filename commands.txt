@@ -1,0 +1,8 @@
+sqlite3 Dictionary.db -json "SELECT id, word, definition FROM dict;" > Dictionary.json
+sqlite3 Dictionary.db -json "SELECT id, word FROM dict;" > Words.json
+
+/a => </span>
+\\n => <br><br>
+<\\"(\d{1,5})\\"> => <span data-word='$1'>
+
+\((.*?)\.\) => (<span class='sw-word'>$1</span>)
